@@ -1,0 +1,57 @@
+{% extends './customer_main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row">
+    <div class="col-4">
+<div class="card" style="width: 18rem;background:#8ababf;">
+    <div class="card-body text-center">
+      <h5 class="card-title">Total Order</h5>
+      <hr>
+      <h2 class="card-text">6</h2>
+      
+    </div>
+  </div>
+</div>
+<div class="col-4">
+  <div class="card" style="width: 18rem;background:#8ababf;">
+    <div class="card-body text-center">
+      <h5 class="card-title ">Order Deliverd</h5>
+      <hr>
+      <h2 class="card-text">4</h2>
+      
+    </div>
+  </div>
+</div>
+<div class="col-4">
+  <div class="card" style="width: 18rem;background:#8ababf;">
+    <div class="card-body text-center">
+      <h5 class="card-title">Pending</h5>
+      <hr>
+      <h2 class="card-text">4</h2>
+     
+    </div>
+  </div>
+</div>
+</div>
+<br><br><br>
+
+<table class="table table-success table-striped">
+    <tr>
+        <th>Product</th>
+        <th>Status</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    <tr>
+        <td>shoe</td>
+        <td>pending</td>
+        <td><button class="btn btn-info">Update</button></td>
+        <td><button class="btn btn-danger">Delete</button></td>
+    
+    </tr>
+  
+  </table>
+  <br><br><br><br><br><br><br>
+
+{% endblock content %}
